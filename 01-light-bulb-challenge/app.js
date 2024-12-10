@@ -14,3 +14,29 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+// grab the on button from the html ✅
+// grab the image from the html ✅
+//when the on button is clicked ✅
+// a function that takes that click and shows the light bulb on image ✅
+
+const onButton = document.getElementById("turnBulbOn");
+const img = document.getElementById("lightbulb");
+
+function turnLightOn() {
+  img.src = "light-bulb-on.png"
+}
+
+onButton.addEventListener("click" , turnLightOn);
+
+//grab the off button from the html ✅
+//when the off button is clicked ✅
+// a function that takes the click and shows the lightbulb off image ✅
+
+const offButton = document.getElementById("turnBulbOff");
+
+function turnLightOff() {
+  img.src = "light-bulb-off.png"
+}
+
+offButton.addEventListener("click" , turnLightOff);
