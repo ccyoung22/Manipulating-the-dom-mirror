@@ -5,11 +5,30 @@ Learning Objectives:
   3. React to changes in input fields dynamically.
 
 Brief:
-You're presented with a canvas and a color picker. Your task is to implement the functionality to change the background color of the canvas based on the color selected in the color picker.
+You're presented with a canvas and a color picker. Your task is to 
+implement the functionality to change the background color of the canvas 
+based on the color selected in the color picker.
 
 Expected Outcomes:
-  1. When a color is selected using the color picker, the canvas should instantly reflect that color.
-  2. The canvas should always display the current color selected in the color picker.
+  1. When a color is selected using the color picker, the canvas should 
+  instantly reflect that color.
+  2. The canvas should always display the current color selected in the color
+   picker.
 */
 
+/*
 // Place your plan and solution below!
+// get the canvas
+// get the color picker
+create function to change color of canvas according to color picker
+add event listener for color input
+
+*/
+
+const canvas = document.getElementById("canvas");
+const colorPicker = document.getElementById("colorPicker");
+
+function changeColor() {
+  canvas.style.backgroundColor = colorPicker.value;
+};
+colorPicker.addEventListener("input",changeColor);
