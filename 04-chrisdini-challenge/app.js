@@ -16,7 +16,25 @@ Hint: You can achieve this in multiple ways e.g. via the opacity or style proper
 
 // Place your plan and solution below!
 
+//grab chris image from the html 
+
+const chrisImage = document.getElementById("chrisImage");
+
+function chrisVanish() {
+  chrisImage.style.opacity = 0;
+}
+
+function chrisReappear() {
+  chrisImage.style.opacity = 100;
+}
+
+
+chrisImage.addEventListener("mouseover", chrisVanish);
+chrisImage.addEventListener("mouseleave" , chrisReappear);
 
 
 
-/// test of mirror 
+//a function that says when user hovers their mouse over chris image, it dissapears 
+//when the mouse is not on chris, the image shows 
+//an event listener so that chris image can read that event 
+
