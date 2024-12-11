@@ -15,3 +15,8 @@ Hint: You can achieve this in multiple ways e.g. via the opacity or style proper
 */
 
 // Place your plan and solution below!
+
+
+
+
+/// test of mirror 
